@@ -1328,7 +1328,7 @@ header nav.navbar-findcond ul.navbar-nav > li.profile-nav > a.no_usr_logdin {pad
 body {padding-bottom: 56px;}
 nav.navbar-findcond .yp_slide_menu, .sidenav-overlay {display: none;}
 nav.navbar-findcond .container-fluid>.navbar-header {margin: 0;float: none !important;text-align: center;}
-nav.navbar-findcond .logo-img {float: none;margin: 8px 0 !important;}
+nav.navbar-findcond .logo-img {float: left;margin: 8px 0 !important;}
 .nav>li.vid_upld_menu_vid_hdr {position: absolute;top: 0;left: 5px;}
 .nav>li.vp_srch_vid_hdr {position: absolute;top: 0;left: 53px;}
 .nav>li.vp_notif_vid_hdr {position: absolute;top: 0;right: 60px;}
@@ -1355,8 +1355,12 @@ header.navbar-fixed-top.nav_up, header.navbar-fixed-top.nav_up nav.navbar-fixed-
 .yp_side_drawer .vp_hide_side_links {display: none !important;}
 .pt_msg_area {height: calc(100vh - 227px);}
 .pt_msg_area {height: calc(100vh - 227px);}
-header nav.navbar .container-fluid .pull-right>ul.nav>li:first-child{right: 53px};
-header nav.navbar .container-fluid .pull-right>ul.nav>li:last-child{right: 15px};
+#DONATE{left: unset; right: 170px;}
+#UPLOAD{left: unset; right: 130px;}
+#SEARCH{left: unset; right: 93px;}
+#MESSAGES{}
+#ALERTS{left: unset; right: 53px;}
+#USER{left: unset; right: 5px;}
 }
 
 @media (max-width: 620px){
