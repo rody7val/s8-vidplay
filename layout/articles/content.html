@@ -1,0 +1,56 @@
+<div class="articles-content">
+	<div class="subscriptions-list author-list articles-container">
+		<h3 class="recent-articles">
+			{{LANG recent_articles}} 
+			<?php if ($pt->config->all_create_articles == 'on') { ?>
+				<a href="{{LINK create_article}}" class="btn btn_primary_rev cret_artcle" data-load="?link1=create_article">{{LANG create_article}} </a><div class="clear"></div>
+			<?php } ?>
+			<div class="article-categories">
+				<div>
+					<form class="form search-articles-form" method="post" action="">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="{{LANG search_articles}}" name="q">
+							<button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</h3>
+			
+		<?php if ($pt->posts_count == 0) { ?>
+			<div class="empty_state">
+				<span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M29 5.031h-7.15c-1.534 0-3.034 0.441-4.325 1.272l-1.525 0.978-1.525-0.978c-1.287-0.831-2.791-1.272-4.325-1.272h-7.15c-0.553 0-1 0.447-1 1v17.75c0 0.553 0.447 1 1 1h7.15c1.534 0 3.034 0.441 4.325 1.272l1.387 0.894c0.041 0.025 0.088 0.041 0.134 0.041s0.094-0.012 0.134-0.041l1.387-0.894c1.294-0.831 2.797-1.272 4.331-1.272h7.15c0.553 0 1-0.447 1-1v-17.75c0-0.553-0.447-1-1-1zM10.15 22.531h-5.9v-15.25h5.9c1.106 0 2.181 0.316 3.109 0.912l1.525 0.978 0.216 0.141v14.438c-1.488-0.8-3.15-1.219-4.85-1.219zM27.75 22.531h-5.9c-1.7 0-3.363 0.419-4.85 1.219v-14.438l0.216-0.141 1.525-0.978c0.928-0.597 2.003-0.912 3.109-0.912h5.9v15.25z"></path>
+<path fill="currentColor" d="M12.403 11.281h-5.806c-0.122 0-0.222 0.106-0.222 0.234v1.406c0 0.128 0.1 0.234 0.222 0.234h5.803c0.122 0 0.222-0.106 0.222-0.234v-1.406c0.003-0.128-0.097-0.234-0.219-0.234zM19.375 11.516v1.406c0 0.128 0.1 0.234 0.222 0.234h5.803c0.122 0 0.222-0.106 0.222-0.234v-1.406c0-0.128-0.1-0.234-0.222-0.234h-5.803c-0.122 0-0.222 0.106-0.222 0.234zM12.403 15.656h-5.806c-0.122 0-0.222 0.106-0.222 0.234v1.406c0 0.128 0.1 0.234 0.222 0.234h5.803c0.122 0 0.222-0.106 0.222-0.234v-1.406c0.003-0.128-0.097-0.234-0.219-0.234zM25.403 15.656h-5.806c-0.122 0-0.222 0.106-0.222 0.234v1.406c0 0.128 0.1 0.234 0.222 0.234h5.803c0.122 0 0.222-0.106 0.222-0.234v-1.406c0.003-0.128-0.097-0.234-0.219-0.234z"></path>
+ </svg></span>
+				<p>{{LANG no_post_found}}</p>
+				<?php if ($pt->config->all_create_articles == 'on') { ?>
+					<a class="btn btn_primary" href="{{LINK admin-cp/create-article}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path></svg> {{LANG create}}</a>
+				<?php } ?>
+			</div>
+		<?php } else { ?>
+			{{POSTS}}
+		<?php } ?>
+	</div>
+</div>
+<?php if ($pt->posts_count > 0) { ?>
+	<button class="watch-video-show-more desc vp_load_more" data-type="articles" onclick="PT_LoadPost('{{CATEGORY}}',this);">
+		<span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path></svg></span> {{LANG show_more}}
+	</button>
+<?php } ?>
+
+
+<script>
+   jQuery(document).ready(function($) {
+      $('.search-articles-form').submit(function(event) {
+         var query = $(this).find('input').val();
+         if (!query){
+            $(this).find('input').addClass('danger-field-border');
+            return false;
+         }
+         else if(query.length > 50){
+            $(this).find('input').addClass('danger-field-border');
+            return false;
+         }
+      });
+   });
+</script>

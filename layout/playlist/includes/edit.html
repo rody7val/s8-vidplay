@@ -1,0 +1,17 @@
+<form class="form create-new-list edit-list-form">
+	<h4 class="vp_modal_title"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M7.515 16.943l2.437 2.439 1.888-1.888-2.44-2.436 1.885-1.885 2.439 2.437 1.885-1.885-2.436-2.439 1.885-1.885 2.435 2.44 1.887-1.887-2.439-2.437 3.772-3.771c0.241-0.241 0.575-0.39 0.943-0.39s0.701 0.149 0.943 0.39l5.656 5.656c0.241 0.241 0.39 0.575 0.39 0.943s-0.149 0.701-0.39 0.943l-16.969 16.969c-0.241 0.241-0.575 0.39-0.943 0.39s-0.701-0.149-0.943-0.39l-5.656-5.656c-0.241-0.241-0.39-0.575-0.39-0.943s0.149-0.701 0.39-0.943l3.771-3.772zM18.828 24.484l5.657-5.656 3.515 3.515v5.657h-5.656l-3.516-3.516zM7.515 13.171l-3.772-3.771c-0.242-0.241-0.391-0.575-0.391-0.943s0.149-0.702 0.391-0.943l3.772-3.771c0.241-0.241 0.575-0.39 0.943-0.39s0.701 0.149 0.943 0.39l3.773 3.771-5.659 5.657z"></path></svg></span> {{LANG edit}} {{NAME}}</h4>
+	<div class="sa-create-list-alert"></div>
+	<div class="form-group">
+		<input type="text" class="form-control" value="{{NAME}}">
+	</div>
+	<div class="form-group">
+		<select class="form-control">
+			<option value="1" selected="selected">{{LANG privacy}}</option>
+			<option value="1" {{PUBLIC}}>{{LANG public}}</option>
+			<option value="0" {{PRIVATE}}>{{LANG private}}</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<textarea name="" id="" rows="3" class="form-control" placeholder="{{LANG description}}..">{{DESC}}</textarea>
+	</div>
+</form>

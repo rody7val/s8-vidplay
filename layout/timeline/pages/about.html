@@ -1,0 +1,35 @@
+<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8 pt_about">
+		<h4 class="ptitle">
+			<div><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 32 32"><path fill="currentColor" d="M16 29.938c-7.685 0-13.938-6.252-13.938-13.938 0-7.685 6.253-13.938 13.938-13.938s13.938 6.252 13.938 13.938-6.252 13.938-13.938 13.938zM16 4.062c-6.583 0-11.938 5.355-11.938 11.938s5.355 11.938 11.938 11.938c6.582 0 11.938-5.355 11.938-11.938s-5.356-11.938-11.938-11.938z"></path>
+<path fill="currentColor" d="M14.5 9.5c0 0.828 0.672 1.5 1.5 1.5s1.5-0.672 1.5-1.5v0c0-0.828-0.672-1.5-1.5-1.5s-1.5 0.672-1.5 1.5v0z"></path>
+<path fill="currentColor" d="M16 24c-0.552 0-1-0.447-1-1v-9c0-0.552 0.448-1 1-1s1 0.448 1 1v9c0 0.553-0.448 1-1 1z"></path></svg></div> {{LANG about_profile}} {{USER name}}
+		</h4>
+		<?php if (!empty($pt->profile_user->about)) { ?>
+			{{USER about}}
+		<?php } ?>
+		<!--<h5><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 32 32"><path fill="#7a7a7a" d="M20.3 19.8c2.7-1.5 4.6-4.5 4.6-7.8 0-5-4-9-9-9s-9 4-9 9c0 3.4 1.8 6.3 4.6 7.8-3.8 1.5-6.7 4.8-7.5 9-0.1 0.3 0 0.6 0.2 0.8 0.1 0.3 0.4 0.4 0.7 0.4h22c0.3 0 0.6-0.1 0.8-0.4 0.2-0.2 0.3-0.5 0.2-0.8-0.8-4.2-3.8-7.5-7.6-9z"></path></svg> {{USER gender_text}}</h5>-->
+		<?php if (!empty($pt->profile_user->country_name) && $pt->profile_user->country_name != "Select Country") { ?>
+			<h5><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"><path fill="#7a7a7a" d="M16 2.667c-7.364 0-13.333 5.97-13.333 13.333s5.97 13.333 13.333 13.333c7.364 0 13.333-5.97 13.333-13.333v0c0-7.364-5.97-13.333-13.333-13.333v0zM16 5.333c0.849 0.006 1.672 0.107 2.461 0.295l-0.074-0.015c-0.241 0.536-0.594 0.983-1.033 1.328l-0.007 0.006c-0.293 0.227-0.613 0.413-0.933 0.613-1.026 0.512-1.862 1.271-2.452 2.202l-0.015 0.025c-0.537 1.095-0.852 2.382-0.852 3.743 0 0.231 0.009 0.46 0.027 0.687l-0.002-0.030c0 1.813 0 2.88-1.267 3.827-1.827 1.427-4.613 0.627-6.347-0.093-0.108-0.576-0.171-1.24-0.173-1.918v-0.002c0-5.891 4.776-10.667 10.667-10.667v0zM22.52 24.427c-0.255-0.583-0.536-1.083-0.86-1.55l0.020 0.030c-0.147-0.213-0.293-0.427-0.427-0.653-0.52-0.907-0.333-1.333 0.507-2.667l0.133-0.227c0.489-0.879 0.776-1.929 0.776-3.045 0-0.069-0.001-0.137-0.003-0.205l0 0.010c-0-0.006-0-0.014-0-0.022 0-0.464 0.044-0.917 0.127-1.357l-0.007 0.045c0.213-0.973 2.28-1.24 3.56-1.333 0.212 0.791 0.334 1.7 0.334 2.637 0 3.413-1.615 6.449-4.122 8.385l-0.025 0.018z"></path></svg> {{USER country_name}}</h5>
+			<?php if (!empty($pt->custom_fields)): ?>
+				<div>
+					<hr>
+					<h5><i class="fa fa-info fa-fw"></i> {{LANG more_info}}</h5>
+					{{CUSTOM_FIELDS}}
+				</div>
+			<?php endif ?>
+		<?php } ?> 
+		
+		<?php if (!empty($pt->profile_user->facebook) || !empty($pt->profile_user->google) || !empty($pt->profile_user->twitter)) { ?>
+		<hr>
+		<div class="share-video">
+			<?php if (!empty($pt->profile_user->facebook)) { ?><a href="{{USER facebook}}" onclick="location.href='{{USER facebook}}'" class="fa fa-facebook"></a><?php } ?>
+			<?php if (!empty($pt->profile_user->google)) { ?><a href="{{USER google}}" onclick="location.href='{{USER google}}' " class="fa fa-google"></a><?php } ?>
+			<?php if (!empty($pt->profile_user->twitter)) { ?><a href="{{USER twitter}}" onclick="location.href='{{USER twitter}}' "class="fa fa-twitter"></a><?php } ?>
+			<?php if (!empty($pt->profile_user->instagram)) { ?><a href="{{USER instagram}}" onclick="location.href='{{USER instagram}}' "class="fa fa-instagram"></a><?php } ?>
+		</div>
+		<?php } ?>
+	</div>
+	<div class="col-md-2"></div>
+</div>

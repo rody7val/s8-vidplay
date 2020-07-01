@@ -1,0 +1,41 @@
+<div class="main-comment" data-id="{{ID}}" id="comment-{{ID}}">
+	<div class="main-comment-data-sp">
+		<div class="user-avatar pull-left">
+			<img src="{{USER avatar}}" alt="{{USER name}}">
+		</div>
+		<div class="user-name">
+			<a href="{{USER url}}" data-load="?link1=timeline&id={{USER username}}">{{USER name}}</a>
+			<?php if ($pt->is_verified == true): ?>
+				<i class="fa fa-check-circle fa-fw verified"></i>
+			<?php endif; ?>
+			<small>{{TIME}}</small>
+		</div>
+		<div class="user-comment user_comment_">
+			<p class="comment-text-{{ID}}" id="comment-text-{{ID}}">{{TEXT}}</p>
+			<div class="width-100 div-vote-comment">
+				<span class="div-vote-comment-btn">
+					<span onclick="PT_LikeComments(this,'up','{{ID}}');" data-comment-likes="{{ID}}">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -5 29 42" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up {{LIKED}}"><path d="M0.426 15.574c0.263 0.263 0.627 0.426 1.029 0.426s0.765-0.163 1.029-0.426l10.608-10.608v25.579c0 0.803 0.651 1.455 1.455 1.455s1.455-0.651 1.455-1.455v0-25.579l10.608 10.608c0.263 0.263 0.627 0.426 1.029 0.426 0.803 0 1.455-0.651 1.455-1.455 0-0.402-0.163-0.765-0.426-1.029l-13.091-13.089c-0.13-0.131-0.284-0.238-0.456-0.313l-0.009-0.004c-0.163-0.071-0.353-0.112-0.552-0.112-0.001 0-0.001 0-0.002 0h0c-0.402 0.001-0.766 0.164-1.029 0.428l-13.1 13.089c-0.263 0.263-0.426 0.627-0.426 1.029s0.163 0.765 0.426 1.029v0z"></path></svg> <span>{{LIKES}}</span>
+					</span>
+					<!--<span onclick="PT_LikeComments(this,'down','{{ID}}');" data-comment-dislikes="{{ID}}">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down {{DIS_LIKED}}"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg> <span>{{DIS_LIKES}}</span>
+					</span>
+					<span data-comment-dislikes="{{ID}}"></span>-->
+					<span class="bold">·</span>
+					<span><a href="javascript:void(0)" onclick="PT_DeleteComment({{ID}});">{{LANG delete}}</a></span>
+				</span>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+<script type="text/javascript">
+function PT_DeleteComment(id) {
+	if (!id) { return false; }
+	if (!confirm('{{LANG delete_confirmation}}')) { return false; }
+	$('#comment_info_' + id).slideUp('fast');
+	$.post('{{LINK aj/delete-comment}}', {id: id});
+}
+</script>

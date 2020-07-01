@@ -1,0 +1,445 @@
+<?php if ($pt->user->is_pro ==  0): ?>
+<?php if ($pt->config->credit_card == 'yes') { ?>
+<script src="https://checkout.stripe.com/checkout.js"></script>
+<?php } ?>
+<div class="go-pro-container">
+	<div class="go-pro-head">
+		<h4><button class="btn btn-main free-bg">
+			 Disfruta de S8 o descubre más funciones siendo Colaborador SS8
+    </button></h4>
+	</div>
+	<div class="go-pro-body">
+		<div class="go-pro-packages row">
+			<div class="go-pro-pkg">
+				<div>
+					<div class="free-bg">
+						
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-20 0 71.21 49.1"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#d22027;}</style><symbol id="s8" data-name="s8" viewBox="0 0 31.21 49.1"><g id="fb"><path d="M21.36,20.12l5,4.26c1.83-2.52,6.09-8,3.65-14.71a13.1,13.1,0,0,0-3.37-5,14.74,14.74,0,0,0-2.52-1.9,15.17,15.17,0,0,0-2.94-1.36A16.36,16.36,0,0,0,14.69.55a15.78,15.78,0,0,0-3.24.54c-.58.16-1.07.33-1.55.51a14.19,14.19,0,0,0-1.48.67A14.48,14.48,0,0,0,3.61,6.19,12.73,12.73,0,0,0,2,8.79a10.6,10.6,0,0,0-.91,2.84c-1.28,8.15,4,11.66,6.27,13.71l3.91,3.54,5.94,5.47.06.06a1.26,1.26,0,0,1,.17.3,1.85,1.85,0,0,1,.1.44,1.72,1.72,0,0,1-.06.53,1.3,1.3,0,0,1-.18.4,2,2,0,0,1-.84.69l-.24.08-.22,0h0a2.6,2.6,0,0,1-.56,0l-.26,0-.09,0h0l-.13-.05a1.6,1.6,0,0,1-.42-.26,1.71,1.71,0,0,1-.56-.82,1.93,1.93,0,0,1-.06-.5v0l0-.22,0-.16.06-.15,0,0c.08-.2.1-.22.71-.77l.83-.71-3.13-2.88-1-.94-1.59,1.4a4.38,4.38,0,0,0-.36.39,7,7,0,0,0-1.09,1.81A6.41,6.41,0,0,0,8.14,37a7,7,0,0,0,2.33,3.5,8.15,8.15,0,0,0,4.1,1.74,8.61,8.61,0,0,0,4.48-.61,7.72,7.72,0,0,0,3.36-2.75,6.48,6.48,0,0,0,1.08-3.95,6.3,6.3,0,0,0-1.33-3.81C19.54,28.27,9,18.67,9,18.67,5.62,15.17,6.92,6,15.52,5.87,24.89,5.68,24.69,14,24.69,14,24.57,17.42,21.36,20.12,21.36,20.12Z"/><path class="cls-1" d="M15.7,42.77a9.67,9.67,0,0,1-1.2-.08,8.62,8.62,0,0,1-4.35-1.85,7.49,7.49,0,0,1-2.5-3.76,6.91,6.91,0,0,1,.25-4.4,7.49,7.49,0,0,1,1.17-1.95q.18-.21.39-.42l0,0,1.32-1.16L7,25.71c-.22-.2-.47-.42-.75-.65C3.71,22.86-.6,19.17.6,11.55a11.11,11.11,0,0,1,1-3,14,14,0,0,1,1.66-2.7,15.17,15.17,0,0,1,5-4.06,16.44,16.44,0,0,1,1.53-.68c.49-.19,1-.36,1.59-.53A17.79,17.79,0,0,1,14.65,0a17,17,0,0,1,6.66.87,16.76,16.76,0,0,1,3,1.4,14.83,14.83,0,0,1,2.6,2A13.44,13.44,0,0,1,30.45,9.5c2.43,6.73-1.57,12.23-3.5,14.88l-.54.75-5.84-5,.46-.38s3-2.6,3.15-5.72A8.26,8.26,0,0,0,22,8.54c-1.49-1.49-3.67-2.22-6.47-2.17-4.66.09-6.48,2.84-7.15,4.47-1.08,2.61-.66,5.75,1,7.47C10,18.83,20,28,22.53,30.72l0,0A6.84,6.84,0,0,1,24,34.85a7,7,0,0,1-1.17,4.26,8.16,8.16,0,0,1-3.58,2.94A9,9,0,0,1,15.7,42.77ZM10.16,31c-.11.11-.21.23-.31.35a6.65,6.65,0,0,0-1,1.67,5.94,5.94,0,0,0-.21,3.75,6.5,6.5,0,0,0,2.16,3.25,7.58,7.58,0,0,0,3.84,1.62,8.15,8.15,0,0,0,4.22-.56A7.3,7.3,0,0,0,22,38.55a5.91,5.91,0,0,0,1-3.64,5.79,5.79,0,0,0-1.2-3.5c-2.59-2.77-13-12.27-13.11-12.36l0,0c-1.93-2-2.43-5.59-1.21-8.57,1.31-3.16,4.25-5,8.07-5.09,3.09-.06,5.52.77,7.22,2.47A9.28,9.28,0,0,1,25.2,14c-.1,2.84-2.16,5.16-3.08,6.07l4.12,3.53c2-2.73,5.47-7.68,3.26-13.8A12.56,12.56,0,0,0,26.25,5a14.79,14.79,0,0,0-2.43-1.84A15.34,15.34,0,0,0,21,1.87a16,16,0,0,0-6.26-.82,16.48,16.48,0,0,0-3.14.53c-.56.16-1,.32-1.49.49a14.6,14.6,0,0,0-1.44.65A14,14,0,0,0,4,6.5,12.94,12.94,0,0,0,2.47,9a10.32,10.32,0,0,0-.87,2.71C.49,18.77,4.53,22.22,6.94,24.29l.77.67,3.91,3.54,6,5.5.09.1a1.88,1.88,0,0,1,.24.42v0a1.87,1.87,0,0,1,.12.57,1.92,1.92,0,0,1-.07.7v0a2.06,2.06,0,0,1-.25.53,2.45,2.45,0,0,1-1.07.88l-.27.09h0l-.27,0h-.05a2.79,2.79,0,0,1-.71,0L15,37.34l-.13,0h0l-.16-.06a2.29,2.29,0,0,1-.55-.33,2.18,2.18,0,0,1-.73-1.09,2.43,2.43,0,0,1-.08-.64v-.05a2.57,2.57,0,0,1,.1-.52l.11-.24c.11-.29.2-.37.83-.94l.4-.34L11.4,30ZM14.42,35l0,.08s0,.11,0,.16v0a1.08,1.08,0,0,0,0,.32,1.12,1.12,0,0,0,.39.58,1.35,1.35,0,0,0,.29.18l.11,0h.1a.62.62,0,0,0,.18,0,1.62,1.62,0,0,0,.44,0h0l.15,0,.2-.07a1.37,1.37,0,0,0,.58-.48.62.62,0,0,0,.13-.27.9.9,0,0,0,0-.35.78.78,0,0,0-.15-.45l0,0L15.7,33.65l-.63.54a6.32,6.32,0,0,0-.54.51l0,0a.54.54,0,0,1,0,.11Zm-.86-.58v0Z"/><path class="cls-2" d="M29.94,31.66a11.26,11.26,0,0,0-.51-1.4,11.5,11.5,0,0,0-.68-1.36,11.77,11.77,0,0,0-1.92-2.52L24.1,23.76l-3.85-3.59-5.86-5.53-.06-.07a1.26,1.26,0,0,1-.17-.3,1.44,1.44,0,0,1-.09-.44,1.69,1.69,0,0,1,.06-.53,1.62,1.62,0,0,1,.19-.4,2,2,0,0,1,.85-.68l.23-.07.22,0h0a1.78,1.78,0,0,1,.56,0,1.66,1.66,0,0,1,.26.05l.09,0h0l.14.05a2.13,2.13,0,0,1,.41.26,1.65,1.65,0,0,1,.55.83,1.88,1.88,0,0,1,.05.5v0a1.55,1.55,0,0,1,0,.21.75.75,0,0,1-.05.16l-.06.15,0,0a9.06,9.06,0,0,1-1.63,1.62l1.16,1,1.76,1.67,1.28,1.2,1.59-1.51q.19-.2.36-.39a6.73,6.73,0,0,0,1.11-1.8,6.32,6.32,0,0,0,.28-4.07A6.93,6.93,0,0,0,21.2,8.61a8.06,8.06,0,0,0-4.07-1.78,8.61,8.61,0,0,0-4.48.55,7.73,7.73,0,0,0-3.39,2.71A6.42,6.42,0,0,0,8.13,14a6.5,6.5,0,0,0,1.49,3.81c3,2.88,6.07,5.76,9.06,8.55l1.48,1.38c.73.68,1.48,1.39,2.2,2.11A7.54,7.54,0,0,1,24.2,33a7.39,7.39,0,0,1-1.4,6.78,9.63,9.63,0,0,1-6.7,3.33c-6,.51-13.47-6.78-6.14-14L5.1,24.63C.9,29.13.73,33.33.73,33.33a12.22,12.22,0,0,0,.59,5.83,13.21,13.21,0,0,0,3.31,5.06,14.33,14.33,0,0,0,2.49,1.93A15,15,0,0,0,10,47.54a16.15,16.15,0,0,0,6.44.92,16.57,16.57,0,0,0,3.24-.5,15.8,15.8,0,0,0,1.55-.5,15.53,15.53,0,0,0,1.49-.64A14.62,14.62,0,0,0,27.61,43a13.67,13.67,0,0,0,1.63-2.58,13.09,13.09,0,0,0,1-2.83A12.2,12.2,0,0,0,29.94,31.66Z"/><path class="cls-1" d="M15.53,49.1a17,17,0,0,1-5.7-1,16.27,16.27,0,0,1-3-1.45,15,15,0,0,1-2.59-2A14,14,0,0,1,.75,39.37a12.84,12.84,0,0,1-.62-6.1c0-.45.37-4.61,4.52-9.05a.6.6,0,0,1,.86,0l4.86,4.51a.62.62,0,0,1,.2.44.6.6,0,0,1-.19.44c-2.7,2.66-3.52,5.6-2.29,8.28a8.48,8.48,0,0,0,8,4.66,9,9,0,0,0,6.29-3.1,6.77,6.77,0,0,0,1.28-6.22,6.88,6.88,0,0,0-1.68-2.88c-.72-.72-1.5-1.45-2.19-2.1l-1.47-1.38c-3-2.78-6.08-5.66-9.07-8.55,0,0,0,0,0-.05a7.19,7.19,0,0,1-1.63-4.18A7.08,7.08,0,0,1,8.76,9.75a8.27,8.27,0,0,1,3.65-2.93,9.13,9.13,0,0,1,4.81-.59A8.68,8.68,0,0,1,21.6,8.15,7.51,7.51,0,0,1,24.07,12a7,7,0,0,1-.31,4.46,7.42,7.42,0,0,1-1.21,2,5.23,5.23,0,0,1-.4.43L20.94,20l3.57,3.32,2.74,2.63a13,13,0,0,1,2,2.65A12.68,12.68,0,0,1,30,30a12.37,12.37,0,0,1,.53,1.47,12.77,12.77,0,0,1,.26,6.17,12.5,12.5,0,0,1-1,3,13.66,13.66,0,0,1-1.71,2.7,15.11,15.11,0,0,1-5.06,4,13.48,13.48,0,0,1-1.54.67,14.64,14.64,0,0,1-1.61.51,16.46,16.46,0,0,1-3.36.53ZM5.14,25.5a16.48,16.48,0,0,0-3.2,5.31,9.58,9.58,0,0,0-.6,2.54v.07A11.53,11.53,0,0,0,1.9,39a12.53,12.53,0,0,0,3.15,4.82,14,14,0,0,0,2.39,1.85A14.46,14.46,0,0,0,10.24,47a15.67,15.67,0,0,0,6.2.88,15.48,15.48,0,0,0,3.12-.48c.56-.15,1-.31,1.49-.48a12.32,12.32,0,0,0,1.43-.62,14.08,14.08,0,0,0,4.66-3.7,13,13,0,0,0,1.55-2.46,11.9,11.9,0,0,0,.9-2.7,11.47,11.47,0,0,0-.24-5.58h0a10.68,10.68,0,0,0-.48-1.33,11.9,11.9,0,0,0-.64-1.29,11.56,11.56,0,0,0-1.83-2.4L23.68,24.2l-3.85-3.58L14,15.08l0,0L13.88,15l0,0a2.07,2.07,0,0,1-.25-.44v0a1.85,1.85,0,0,1-.13-.6,2.1,2.1,0,0,1,.08-.73v0a2.12,2.12,0,0,1,.27-.55,2.54,2.54,0,0,1,1.13-.9l.27-.1h0a2.8,2.8,0,0,1,.28-.06h0a2.38,2.38,0,0,1,.75,0l.32.06.13,0h0l.15.06a2.14,2.14,0,0,1,.57.35,2.31,2.31,0,0,1,.76,1.14,2.52,2.52,0,0,1,.07.69v.07a2.51,2.51,0,0,1,0,.27.92.92,0,0,1-.08.25v0l-.06.14a.43.43,0,0,1,0,.07,6.38,6.38,0,0,1-1.23,1.36l.6.51,0,0,2.62,2.47L21.31,18c.11-.11.22-.23.32-.35a6.25,6.25,0,0,0,1-1.63,5.81,5.81,0,0,0,.25-3.68,6.31,6.31,0,0,0-2.08-3.22,7.49,7.49,0,0,0-3.76-1.65,8.06,8.06,0,0,0-4.17.51,7.2,7.2,0,0,0-3.12,2.49,5.82,5.82,0,0,0,.31,7c3,2.87,6.05,5.74,9,8.51l1.47,1.38c.7.65,1.48,1.39,2.22,2.13a8,8,0,0,1,.48,10.73,10.17,10.17,0,0,1-7.12,3.54A9.75,9.75,0,0,1,7,38.37c-.82-1.77-1.59-5.27,2.1-9.2Zm9.68-11.29L16,15.27A10.15,10.15,0,0,0,17,14.19a.16.16,0,0,1,0-.07l0-.1,0-.06a.78.78,0,0,1,0-.14h0a1,1,0,0,0,0-.3v0a1.14,1.14,0,0,0-.35-.51,1.08,1.08,0,0,0-.26-.16l-.1,0h0l0,0h0l-.17,0a1.34,1.34,0,0,0-.4,0h0l-.15,0-.18.07a1.37,1.37,0,0,0-.55.43,1.17,1.17,0,0,0-.12.25,1.1,1.1,0,0,0,0,.31.82.82,0,0,0,.06.26.69.69,0,0,0,.07.13Zm3.31.47v0ZM17,14.2l0,0Z"/></g></symbol></defs><use width="31.21" height="49.1" transform="translate(0 0)" xlink:href="#s8"/></svg>
+
+						<span class="go-pro-pkg-price">S8</span> 
+						<h5 class="package-price"><span>{{CURRENCY}}</span><b>0</b></h5>
+					</div>
+					<div class="go-pro-pkg-features">
+						<div class="go-pro-features-list">
+							<p>Importa videos sin límites <i class="fa fa-check" style="color:#22b478"></i> <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="Importa videos ilimitados desde youtube.com, twitch.tv, facebook.com, vimeo.com, ok.ru, dailymotion.com, .mp4"></i></p>
+                            <p>250MB de subida total <i class="fa fa-check" style="color:#22b478"></i> <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="Límite de tamaño disponible en total entre todos sus videos subidos a nuestra plataforma"></i></p>
+                            <p>Listas de reproducción ilimitadas <i class="fa fa-check" style="color:#22b478"></i></p>
+							<p>Disfruta de películas, documentales, libros y mucho más <i class="fa fa-check" style="color:#22b478"></i></p>
+							<p>Comparte videos y libros <i class="fa fa-check" style="color:#22b478"></i></p>
+							<p>Interactúa con otros usuarios <i class="fa fa-check" style="color:#22b478"></i></p>
+						</div>
+						<div class="go-pro-pkg-purchase">
+							<button class="btn btn-main free-bg" onclick="window.location.href= '{{LINK }}'">
+								¡Ya es S8!
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="go-pro-pkg">
+				<div>
+					<div class="pro-bg">
+						
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-5 0 71.21 49.1"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#d22027;}</style><symbol id="s8" data-name="s8" viewBox="0 0 31.21 49.1"><g id="fb"><path d="M21.36,20.12l5,4.26c1.83-2.52,6.09-8,3.65-14.71a13.1,13.1,0,0,0-3.37-5,14.74,14.74,0,0,0-2.52-1.9,15.17,15.17,0,0,0-2.94-1.36A16.36,16.36,0,0,0,14.69.55a15.78,15.78,0,0,0-3.24.54c-.58.16-1.07.33-1.55.51a14.19,14.19,0,0,0-1.48.67A14.48,14.48,0,0,0,3.61,6.19,12.73,12.73,0,0,0,2,8.79a10.6,10.6,0,0,0-.91,2.84c-1.28,8.15,4,11.66,6.27,13.71l3.91,3.54,5.94,5.47.06.06a1.26,1.26,0,0,1,.17.3,1.85,1.85,0,0,1,.1.44,1.72,1.72,0,0,1-.06.53,1.3,1.3,0,0,1-.18.4,2,2,0,0,1-.84.69l-.24.08-.22,0h0a2.6,2.6,0,0,1-.56,0l-.26,0-.09,0h0l-.13-.05a1.6,1.6,0,0,1-.42-.26,1.71,1.71,0,0,1-.56-.82,1.93,1.93,0,0,1-.06-.5v0l0-.22,0-.16.06-.15,0,0c.08-.2.1-.22.71-.77l.83-.71-3.13-2.88-1-.94-1.59,1.4a4.38,4.38,0,0,0-.36.39,7,7,0,0,0-1.09,1.81A6.41,6.41,0,0,0,8.14,37a7,7,0,0,0,2.33,3.5,8.15,8.15,0,0,0,4.1,1.74,8.61,8.61,0,0,0,4.48-.61,7.72,7.72,0,0,0,3.36-2.75,6.48,6.48,0,0,0,1.08-3.95,6.3,6.3,0,0,0-1.33-3.81C19.54,28.27,9,18.67,9,18.67,5.62,15.17,6.92,6,15.52,5.87,24.89,5.68,24.69,14,24.69,14,24.57,17.42,21.36,20.12,21.36,20.12Z"></path><path class="cls-1" d="M15.7,42.77a9.67,9.67,0,0,1-1.2-.08,8.62,8.62,0,0,1-4.35-1.85,7.49,7.49,0,0,1-2.5-3.76,6.91,6.91,0,0,1,.25-4.4,7.49,7.49,0,0,1,1.17-1.95q.18-.21.39-.42l0,0,1.32-1.16L7,25.71c-.22-.2-.47-.42-.75-.65C3.71,22.86-.6,19.17.6,11.55a11.11,11.11,0,0,1,1-3,14,14,0,0,1,1.66-2.7,15.17,15.17,0,0,1,5-4.06,16.44,16.44,0,0,1,1.53-.68c.49-.19,1-.36,1.59-.53A17.79,17.79,0,0,1,14.65,0a17,17,0,0,1,6.66.87,16.76,16.76,0,0,1,3,1.4,14.83,14.83,0,0,1,2.6,2A13.44,13.44,0,0,1,30.45,9.5c2.43,6.73-1.57,12.23-3.5,14.88l-.54.75-5.84-5,.46-.38s3-2.6,3.15-5.72A8.26,8.26,0,0,0,22,8.54c-1.49-1.49-3.67-2.22-6.47-2.17-4.66.09-6.48,2.84-7.15,4.47-1.08,2.61-.66,5.75,1,7.47C10,18.83,20,28,22.53,30.72l0,0A6.84,6.84,0,0,1,24,34.85a7,7,0,0,1-1.17,4.26,8.16,8.16,0,0,1-3.58,2.94A9,9,0,0,1,15.7,42.77ZM10.16,31c-.11.11-.21.23-.31.35a6.65,6.65,0,0,0-1,1.67,5.94,5.94,0,0,0-.21,3.75,6.5,6.5,0,0,0,2.16,3.25,7.58,7.58,0,0,0,3.84,1.62,8.15,8.15,0,0,0,4.22-.56A7.3,7.3,0,0,0,22,38.55a5.91,5.91,0,0,0,1-3.64,5.79,5.79,0,0,0-1.2-3.5c-2.59-2.77-13-12.27-13.11-12.36l0,0c-1.93-2-2.43-5.59-1.21-8.57,1.31-3.16,4.25-5,8.07-5.09,3.09-.06,5.52.77,7.22,2.47A9.28,9.28,0,0,1,25.2,14c-.1,2.84-2.16,5.16-3.08,6.07l4.12,3.53c2-2.73,5.47-7.68,3.26-13.8A12.56,12.56,0,0,0,26.25,5a14.79,14.79,0,0,0-2.43-1.84A15.34,15.34,0,0,0,21,1.87a16,16,0,0,0-6.26-.82,16.48,16.48,0,0,0-3.14.53c-.56.16-1,.32-1.49.49a14.6,14.6,0,0,0-1.44.65A14,14,0,0,0,4,6.5,12.94,12.94,0,0,0,2.47,9a10.32,10.32,0,0,0-.87,2.71C.49,18.77,4.53,22.22,6.94,24.29l.77.67,3.91,3.54,6,5.5.09.1a1.88,1.88,0,0,1,.24.42v0a1.87,1.87,0,0,1,.12.57,1.92,1.92,0,0,1-.07.7v0a2.06,2.06,0,0,1-.25.53,2.45,2.45,0,0,1-1.07.88l-.27.09h0l-.27,0h-.05a2.79,2.79,0,0,1-.71,0L15,37.34l-.13,0h0l-.16-.06a2.29,2.29,0,0,1-.55-.33,2.18,2.18,0,0,1-.73-1.09,2.43,2.43,0,0,1-.08-.64v-.05a2.57,2.57,0,0,1,.1-.52l.11-.24c.11-.29.2-.37.83-.94l.4-.34L11.4,30ZM14.42,35l0,.08s0,.11,0,.16v0a1.08,1.08,0,0,0,0,.32,1.12,1.12,0,0,0,.39.58,1.35,1.35,0,0,0,.29.18l.11,0h.1a.62.62,0,0,0,.18,0,1.62,1.62,0,0,0,.44,0h0l.15,0,.2-.07a1.37,1.37,0,0,0,.58-.48.62.62,0,0,0,.13-.27.9.9,0,0,0,0-.35.78.78,0,0,0-.15-.45l0,0L15.7,33.65l-.63.54a6.32,6.32,0,0,0-.54.51l0,0a.54.54,0,0,1,0,.11Zm-.86-.58v0Z"></path><path class="cls-2" d="M29.94,31.66a11.26,11.26,0,0,0-.51-1.4,11.5,11.5,0,0,0-.68-1.36,11.77,11.77,0,0,0-1.92-2.52L24.1,23.76l-3.85-3.59-5.86-5.53-.06-.07a1.26,1.26,0,0,1-.17-.3,1.44,1.44,0,0,1-.09-.44,1.69,1.69,0,0,1,.06-.53,1.62,1.62,0,0,1,.19-.4,2,2,0,0,1,.85-.68l.23-.07.22,0h0a1.78,1.78,0,0,1,.56,0,1.66,1.66,0,0,1,.26.05l.09,0h0l.14.05a2.13,2.13,0,0,1,.41.26,1.65,1.65,0,0,1,.55.83,1.88,1.88,0,0,1,.05.5v0a1.55,1.55,0,0,1,0,.21.75.75,0,0,1-.05.16l-.06.15,0,0a9.06,9.06,0,0,1-1.63,1.62l1.16,1,1.76,1.67,1.28,1.2,1.59-1.51q.19-.2.36-.39a6.73,6.73,0,0,0,1.11-1.8,6.32,6.32,0,0,0,.28-4.07A6.93,6.93,0,0,0,21.2,8.61a8.06,8.06,0,0,0-4.07-1.78,8.61,8.61,0,0,0-4.48.55,7.73,7.73,0,0,0-3.39,2.71A6.42,6.42,0,0,0,8.13,14a6.5,6.5,0,0,0,1.49,3.81c3,2.88,6.07,5.76,9.06,8.55l1.48,1.38c.73.68,1.48,1.39,2.2,2.11A7.54,7.54,0,0,1,24.2,33a7.39,7.39,0,0,1-1.4,6.78,9.63,9.63,0,0,1-6.7,3.33c-6,.51-13.47-6.78-6.14-14L5.1,24.63C.9,29.13.73,33.33.73,33.33a12.22,12.22,0,0,0,.59,5.83,13.21,13.21,0,0,0,3.31,5.06,14.33,14.33,0,0,0,2.49,1.93A15,15,0,0,0,10,47.54a16.15,16.15,0,0,0,6.44.92,16.57,16.57,0,0,0,3.24-.5,15.8,15.8,0,0,0,1.55-.5,15.53,15.53,0,0,0,1.49-.64A14.62,14.62,0,0,0,27.61,43a13.67,13.67,0,0,0,1.63-2.58,13.09,13.09,0,0,0,1-2.83A12.2,12.2,0,0,0,29.94,31.66Z"></path><path class="cls-1" d="M15.53,49.1a17,17,0,0,1-5.7-1,16.27,16.27,0,0,1-3-1.45,15,15,0,0,1-2.59-2A14,14,0,0,1,.75,39.37a12.84,12.84,0,0,1-.62-6.1c0-.45.37-4.61,4.52-9.05a.6.6,0,0,1,.86,0l4.86,4.51a.62.62,0,0,1,.2.44.6.6,0,0,1-.19.44c-2.7,2.66-3.52,5.6-2.29,8.28a8.48,8.48,0,0,0,8,4.66,9,9,0,0,0,6.29-3.1,6.77,6.77,0,0,0,1.28-6.22,6.88,6.88,0,0,0-1.68-2.88c-.72-.72-1.5-1.45-2.19-2.1l-1.47-1.38c-3-2.78-6.08-5.66-9.07-8.55,0,0,0,0,0-.05a7.19,7.19,0,0,1-1.63-4.18A7.08,7.08,0,0,1,8.76,9.75a8.27,8.27,0,0,1,3.65-2.93,9.13,9.13,0,0,1,4.81-.59A8.68,8.68,0,0,1,21.6,8.15,7.51,7.51,0,0,1,24.07,12a7,7,0,0,1-.31,4.46,7.42,7.42,0,0,1-1.21,2,5.23,5.23,0,0,1-.4.43L20.94,20l3.57,3.32,2.74,2.63a13,13,0,0,1,2,2.65A12.68,12.68,0,0,1,30,30a12.37,12.37,0,0,1,.53,1.47,12.77,12.77,0,0,1,.26,6.17,12.5,12.5,0,0,1-1,3,13.66,13.66,0,0,1-1.71,2.7,15.11,15.11,0,0,1-5.06,4,13.48,13.48,0,0,1-1.54.67,14.64,14.64,0,0,1-1.61.51,16.46,16.46,0,0,1-3.36.53ZM5.14,25.5a16.48,16.48,0,0,0-3.2,5.31,9.58,9.58,0,0,0-.6,2.54v.07A11.53,11.53,0,0,0,1.9,39a12.53,12.53,0,0,0,3.15,4.82,14,14,0,0,0,2.39,1.85A14.46,14.46,0,0,0,10.24,47a15.67,15.67,0,0,0,6.2.88,15.48,15.48,0,0,0,3.12-.48c.56-.15,1-.31,1.49-.48a12.32,12.32,0,0,0,1.43-.62,14.08,14.08,0,0,0,4.66-3.7,13,13,0,0,0,1.55-2.46,11.9,11.9,0,0,0,.9-2.7,11.47,11.47,0,0,0-.24-5.58h0a10.68,10.68,0,0,0-.48-1.33,11.9,11.9,0,0,0-.64-1.29,11.56,11.56,0,0,0-1.83-2.4L23.68,24.2l-3.85-3.58L14,15.08l0,0L13.88,15l0,0a2.07,2.07,0,0,1-.25-.44v0a1.85,1.85,0,0,1-.13-.6,2.1,2.1,0,0,1,.08-.73v0a2.12,2.12,0,0,1,.27-.55,2.54,2.54,0,0,1,1.13-.9l.27-.1h0a2.8,2.8,0,0,1,.28-.06h0a2.38,2.38,0,0,1,.75,0l.32.06.13,0h0l.15.06a2.14,2.14,0,0,1,.57.35,2.31,2.31,0,0,1,.76,1.14,2.52,2.52,0,0,1,.07.69v.07a2.51,2.51,0,0,1,0,.27.92.92,0,0,1-.08.25v0l-.06.14a.43.43,0,0,1,0,.07,6.38,6.38,0,0,1-1.23,1.36l.6.51,0,0,2.62,2.47L21.31,18c.11-.11.22-.23.32-.35a6.25,6.25,0,0,0,1-1.63,5.81,5.81,0,0,0,.25-3.68,6.31,6.31,0,0,0-2.08-3.22,7.49,7.49,0,0,0-3.76-1.65,8.06,8.06,0,0,0-4.17.51,7.2,7.2,0,0,0-3.12,2.49,5.82,5.82,0,0,0,.31,7c3,2.87,6.05,5.74,9,8.51l1.47,1.38c.7.65,1.48,1.39,2.22,2.13a8,8,0,0,1,.48,10.73,10.17,10.17,0,0,1-7.12,3.54A9.75,9.75,0,0,1,7,38.37c-.82-1.77-1.59-5.27,2.1-9.2Zm9.68-11.29L16,15.27A10.15,10.15,0,0,0,17,14.19a.16.16,0,0,1,0-.07l0-.1,0-.06a.78.78,0,0,1,0-.14h0a1,1,0,0,0,0-.3v0a1.14,1.14,0,0,0-.35-.51,1.08,1.08,0,0,0-.26-.16l-.1,0h0l0,0h0l-.17,0a1.34,1.34,0,0,0-.4,0h0l-.15,0-.18.07a1.37,1.37,0,0,0-.55.43,1.17,1.17,0,0,0-.12.25,1.1,1.1,0,0,0,0,.31.82.82,0,0,0,.06.26.69.69,0,0,0,.07.13Zm3.31.47v0ZM17,14.2l0,0Z"></path></g></symbol></defs><title>asdsd</title><use width="31.21" height="49.1" transform="translate(30 0)" xlink:href="#s8"></use><use width="31.21" height="49.1" transform="translate(0 0)" xlink:href="#s8"></use></svg>
+
+						<span class="go-pro-pkg-price">Colaborador SS8</span> 
+						<h5 class="package-price"><span>{{CURRENCY}}</span><b>{{CONFIG pro_pkg_price}}</b></h5>
+					</div>
+					<div class="go-pro-pkg-features">
+						<div class="go-pro-features-list">
+							<p>Todos los beneficios de S8 <i class="fa fa-check" style="color:#22b478"></i></p>
+							<p><?php if ($pt->unlimited_pro == true ) { ?>
+								{{LANG upload_up_no_limit}}
+							<?php } else{ ?>  20GB de subida total <?php } ?> <i class="fa fa-check" style="color:#22b478"></i> <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="Límite de tamaño disponible en total entre todos sus videos subidos a nuestra plataforma"></i></p>
+							<p>Sube videos a tu canal sin censura <i class="fa fa-check" style="color:#22b478"></i></p>
+                            <p>Descarga videos y libros <i class="fa fa-check" style="color:#22b478"></i> <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="Permite la descarga de videos y libros alojados en nuestra plataforma"></i></p>
+							<p>Importamos tu canal de YouTube <i class="fa fa-check" style="color:#22b478"></i> <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="Si así lo decide, importamos su o sus canales de YouTube completos a nuestra plataforma. Esto no incluye subir videos"></i></p>
+							<p>Participe en videos destacados <i class="fa fa-check" style="color:#22b478"></i> <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="Posibilidad de ser seleccionado a participar en los videos destacados en la página de inicio"></i></p>
+							<p>Sube videos de hasta UHD 4K <i class="fa fa-check" style="color:#22b478"></i> <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="Nuestro sistema reconocerá la calidad de su video, desde 240p hasta UHD 4k"></i></p>
+							<p>Recibe donaciones del público <i class="fa fa-check" style="color:#22b478"></i></p>
+                            <p>Participe en la difusión de la verdad <i class="fa fa-check" style="color:#22b478"></i></p>
+							<?php if ($pt->config->sell_videos_system == 'on') { ?>
+								<p>{{LANG sell_videos}}</p> <i class="fa fa-check" style="color:#22b478"></i>
+							<?php } ?>
+						</div>
+						<div class="go-pro-pkg-purchase">
+							<button class="btn btn-main pro-bg" onclick="PT_PurchasePkg('pro',this);">
+								PayPal
+							</button>
+						</div>
+						<div class="go-pro-pkg-purchase">
+
+<button class="btn btn-main pro-bg">
+<a mp-mode="dftl" href="https://www.mercadopago.com/mla/debits/new?preapproval_plan_id=fa680c282bd94fe79b4559476841f6c6" target="_blank">Mercado Pago</a>
+</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    
+    
+    <div class="go-pro-head" style="margin-top: 30px; margin-bottom: -60px;">
+		<h4><button class="btn btn-main free-bg">
+			 Importante
+    </button></h4>
+	</div>
+    
+    
+	</div><div class="go-pro-body">
+		<div class="go-pro-packages row">
+			<div class="go-pro-pkg" style="
+    width: 657px;
+">
+				<div>
+					
+					<div class="go-pro-pkg-features">
+						<div class="go-pro-features-list">
+							<p style="
+    color: #333;
+                                      font-weight: 500;
+    font-size: 14px;
+">Si utiliza PayPal como método de pago, su cuenta se actualizará a SS8 instantáneamente.</p>
+                            <p style="
+    color: #333;
+                                      font-weight: 500;
+    font-size: 14px;
+">Si utiliza Mercado Pago como método de pago, su cuenta se actualizará a SS8 dentro de las siguientes 24 horas. (Usualmente toma unas pocas horas).</p>
+							<p style="
+    color: #333;
+                                      font-weight: 500;
+    font-size: 14px;
+">El pago es mensual. Si finaliza su pago, ya no podrá subir videos o disfrutar de las demás funciones de SS8. No ofrecemos devoluciones.</p>
+					</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!-- Script Mercado Pago -->
+<script type="text/javascript">
+    (function() {
+        function $MPC_load() {
+            window.$MPC_loaded !== true && (function() {
+                var s = document.createElement("script");
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+                window.$MPC_loaded = true;
+            })();
+        }
+        window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;
+    })();
+</script>
+
+<script>
+	// Called when token created successfully.
+	var successCallback = function(data) {
+	    var myForm = document.getElementById('2checkout_form');
+	    $.post('{{LINK aj/go_pro/checkout}}', {card_number: $("#card_number").val(),card_cvc: $("#card_cvc").val(),card_month: $("#card_month").val(),card_year: $("#card_year").val(),card_name: $("#card_name").val(),card_address: $("#card_address").val(),card_city: $("#card_city").val(),card_state: $("#card_state").val(),card_zip: $("#card_zip").val(),card_country: $("#card_country").val(),card_email: $("#card_email").val(),card_phone: $("#card_phone").val(),type: 'pro',token: data.response.token.token}, function(data, textStatus, xhr) {
+	    	$('#2checkout_btn').html("{{LANG pay}}");
+	    	$('#2checkout_btn').attr('disabled');
+	    	$('#2checkout_btn').removeAttr('disabled');
+	    	$('#2checkout_form').find('.ball-pulse').fadeOut(100);
+	    	if (data.status == 200) {
+	      	 	window.location.href = data.url;
+	      	} else {
+	      	 	$('#2checkout_alert').html("<div class='alert alert-danger'>"+data.error+"</div>");
+				setTimeout(function () {
+					$('#2checkout_alert').html("");
+				},3000);
+	      	}
+	    	/*optional stuff to do after success */
+	    });
+	};
+
+	// Called when token creation fails.
+	var errorCallback = function(data) {
+		$('#2checkout_btn').html("{{LANG pay}}");
+		$('#2checkout_btn').removeAttr('disabled');
+		$('#2checkout_form').find('.ball-pulse').fadeOut(100);
+	    if (data.errorCode === 200) {
+	        tokenRequest();
+	    } else {
+	    	$('#2checkout_alert').html("<div class='alert alert-danger'>"+data.errorMsg+"</div>");
+			setTimeout(function () {
+				$('#2checkout_alert').html("");
+			},3000);
+	    }
+	};
+
+	var tokenRequest = function() {
+		$('#card_number').val($('#_number_').val());
+		$('#2checkout_btn').html("{{LANG please_wait}}");
+		$('#2checkout_btn').attr('disabled','true');
+		if ($("#card_number").val() != '' && $("#card_cvc").val() != '' && $("#card_month").val() != '' && $("#card_year").val() != '' && $("#card_name").val() != '' && $("#card_address").val() != '' && $("#card_city").val() != '' && $("#card_state").val() != '' && $("#card_zip").val() != '' && $("#card_country").val() != 0 && $("#card_email").val() != '' && $("#card_phone").val() != '') {
+			$('#2checkout_form').find('.ball-pulse').fadeIn(100);
+			// Setup token request arguments
+		    var args = {
+		        sellerId: "<?php echo($pt->config->checkout_seller_id) ?>",
+		        publishableKey: "<?php echo($pt->config->checkout_publishable_key) ?>",
+		        ccNo: $("#card_number").val(),
+		        cvv: $("#card_cvc").val(),
+		        expMonth: $("#card_month").val(),
+		        expYear: $("#card_year").val()
+		    };
+
+		    // Make the token request
+		    TCO.requestToken(successCallback, errorCallback, args);
+		}
+		else{
+			$('#2checkout_btn').html("{{LANG pay}}");
+			$('#2checkout_btn').removeAttr('disabled');
+			$('#2checkout_alert').html("<div class='alert alert-danger'>{{LANG please_check_details}}</div>");
+			setTimeout(function () {
+				$('#2checkout_alert').html("");
+			},3000);
+
+		}
+	};
+
+	$(function() {
+	    // Pull in the public encryption key for our environment
+	    TCO.loadPubKey("<?php echo($pt->config->checkout_mode) ?>");
+	});
+
+	function PT_OpenStripe(pkg,self,video_id = 0,price = 0){
+	    if (!pkg || !self) {
+	      return false;
+	    }
+	    $(self).text("{{LANG please_wait}}").attr('disabled', 'true');
+	    var handler = StripeCheckout.configure({
+	        key: "<?php echo $pt->config->stripe_id;?>",
+	        locale: 'english',
+	        token: function(token) {
+	          $('.modal-body').html('<i class="fa fa-spin fa-spinner"></i> {{LANG c_payment}}');
+	          $.post('{{LINK aj/go_pro/stripe}}', {stripeToken:token.id}, function (data) {
+	          	 if (data.status == 200) {
+	          	 	window.location.href = data.url;
+	          	 } else {
+	          	 	$('.modal-body').html('<i class="fa fa-spin fa-spinner"></i> {{LANG payment_declined}}');
+	          	 }
+	          });
+	        }
+	    });
+
+	    handler.open({
+           name: "<?php echo $pt->config->name?>",
+           amount: "<?php echo $pt->config->pro_pkg_price*100; ?>",
+           currency: '<?php echo $pt->config->stripe_currency?>',
+           opened: function () {
+           	  $('#pay-go-pro').modal('hide');
+           	  $('.btn-cart').attr('disabled', false).html("<i class='fa fa-credit-card'></i> {{LANG credit_card}}");
+           }
+        });
+	 }
+
+	 function PT_OpenBank(pkg,self,video_id = 0,price = 0){
+	    if (!pkg || !self) {
+	      return false;
+	    }
+	    $(self).text("{{LANG please_wait}}").attr('disabled', 'true');
+	    $('#pay-go-pro').modal('hide');
+	    $('#configreset').click();
+		$("#blog-alert").html('');
+    	$('#pay-go-pro').modal('hide');
+    	$('#bank_transfer_modal').modal({
+             show: true
+            });
+	}
+
+	 $(document).on('click', '#select-img', function(event) {
+		$("#thumbnail").click()
+	});
+	$(document).on('change', '#thumbnail', function(event) {
+		let imgPath = $(this)[0].files[0].name;
+	    if (typeof(FileReader) != "undefined") {
+	        let reader = new FileReader();
+	        reader.onload = function(e) {
+				$('#receipt_img_preview').attr('src', e.target.result);
+	        }
+	        reader.readAsDataURL(this.files[0]);
+	    }
+		$('#bank_transfer_modal').addClass('up_rec_img_ready');
+	});
+
+	jQuery(document).ready(function($) {
+		$('#bank_transfer_form').ajaxForm({
+		  url: '{{LINK aj/go_pro/bank}}',
+		  beforeSend: function() {
+		    $('#bank_transfer_form').find('.ball-pulse').fadeIn(100);
+		  },
+		  success: function(data) {
+		    if (data['status'] == 200) {
+		    	$("#blog-alert").html('<div class="alert alert-success">'+ data['message'] +'</div>');
+		    	setTimeout(function () {
+		    		window.location = "<?php echo $pt->config->site_url;?>";
+		    		$(".prv-img").html('<div class="thumbnail-rendderer"><div><div class="error-text-renderer"></div><div><p>{{LINK browse_to_upload}}</p></div></div> </div>');
+		    		$("#blog-alert").html('');
+		    		$('#configreset').click();
+
+		    	},3000)
+		    } else if (data['message']) {
+		      $("#blog-alert").html('<div class="alert alert-danger">' + data['message'] + '</div>');
+		    } 
+		    $('#bank_transfer_form').find('.ball-pulse').fadeOut(100);
+		}});
+	});
+</script>
+
+<div class="modal fade matdialog" id="2checkout_modal" role="dialog" data-keyboard="false">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">{{LANG checkout_text}}</h4>
+			</div>
+			<form class="form form-horizontal" method="post" id="2checkout_form" action="#">
+				<div class="modal-body twocheckout_modal">
+					<div id="2checkout_alert"></div>
+					<div class="clear"></div>
+					<div class="sun_input col-md-6">
+						<input id="card_name" type="text" class="form-control input-md" autocomplete="off" placeholder="{{LANG name}}" value="<?php echo($pt->user->name) ?>">
+					</div>
+					<div class="sun_input col-md-6">
+						<input id="card_address" type="text" class="form-control input-md" autocomplete="off" placeholder="{{LANG address}}" value="<?php echo($pt->user->address) ?>">
+					</div>
+					<div class="sun_input col-md-6">
+						<input id="card_city" type="text" class="form-control input-md" autocomplete="off" placeholder="{{LANG city}}" value="<?php echo($pt->user->city) ?>">
+					</div>
+					<div class="sun_input col-md-6">
+						<input id="card_state" type="text" class="form-control input-md" autocomplete="off" placeholder="{{LANG state}}" value="<?php echo($pt->user->state) ?>">
+					</div>
+					<div class="sun_input col-md-6">
+						<input id="card_zip" type="text" class="form-control input-md" autocomplete="off" placeholder="{{LANG zip}}" value="<?php echo($pt->user->zip) ?>">
+					</div>
+			        <div class="sun_input col-md-6">
+			             <select id="card_country" name="card_country" class="form-control">{{COUNTRIES}}</select>
+			        </div>
+					<div class="sun_input col-md-6">
+						<input id="card_email" type="text" class="form-control input-md" autocomplete="off" placeholder="{{LANG email}}" value="<?php echo($pt->user->email) ?>">
+					</div>
+					<div class="sun_input col-md-6">
+						<input id="card_phone" type="text" class="form-control input-md" autocomplete="off" placeholder="{{LANG phone_number}}" value="<?php echo($pt->user->phone_number) ?>">
+					</div>
+					<div class="clear"></div>
+					<hr>
+					<div class="row two_check_card">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" /></svg>
+						<div class="sun_input col-xs-12">
+							<input id="_number_" type="text" class="form-control input-md" autocomplete="off" placeholder="{{LANG card_number}}">
+							<input id="card_number" name="card_number" type="hidden" class="form-control input-md" autocomplete="off">
+						</div>
+						<div class="sun_input col-xs-4">
+							<select id="card_month" name="card_month" type="text" class="form-control input-md" autocomplete="off" placeholder="{{LANG month}} (01)">
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select>
+						</div>
+						<div class="sun_input col-xs-4 no-padding-both">
+							<select id="card_year" name="card_year" type="text" class="form-control input-md" autocomplete="off" placeholder="{{LANG year}} (2019)">
+				                <?php for ($i=date('Y'); $i <= date('Y')+15; $i++) {  ?>
+									<option value="<?php echo($i) ?>"><?php echo($i) ?></option>
+								<?php } ?>
+				            </select>
+						</div>
+						<div class="sun_input col-xs-4">
+							<input id="card_cvc" name="card_cvc" type="text" class="form-control input-md" autocomplete="off" placeholder="CVC" maxlength="3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+						</div>
+					</div>
+					<div class="clear"></div>
+					<input type="text" id="2checkout_type" class="hidden" name="type">
+					<input id="card_token" name="token" type="hidden" value="">
+				</div>
+				<div class="clear"></div>
+				<div class="modal-footer">
+					<div class="ball-pulse"><div></div><div></div><div></div></div>
+					<button type="button" class="matbtn btn btn-default" data-dismiss="modal">{{LANG cancel}}</button>
+					<button type="button" class="btn btn-main" onclick="tokenRequest()" id="2checkout_btn">{{LANG pay}}</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade matdialog" id="bank_transfer_modal" role="dialog" data-keyboard="false">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">{{LANG bank_transfer}}</h4>
+			</div>
+			<form class="form form-horizontal" method="post" id="bank_transfer_form" action="#">
+				<div class="modal-body dt_bank_trans_modal">
+					<div id="blog-alert"></div>
+					
+					<?php echo html_entity_decode($pt->config->bank_description);?>
+					
+					<?php if (!empty($pt->config->bank_transfer_note)) { ?>
+						<div class="dt_user_profile hide_alert_info_bank_trans">
+							<span class="valign-wrapper">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M13,13H11V7H13M13,17H11V15H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"></path></svg> Note:
+							</span>
+							<ul class="dt_prof_vrfy">
+								<li><?php echo $pt->config->bank_transfer_note;?></li>
+							</ul>
+						</div>
+					<?php } ?>
+					<p class="dt_bank_trans_upl_rec"><a href="javascript:void(0);" onclick="$('#bank_transfer_modal').addClass('up_rec_active'); return false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M13.5,16V19H10.5V16H8L12,12L16,16H13.5M13,9V3.5L18.5,9H13Z"></path></svg> {{LANG upload}}</a></p>
+					<div class="upload_bank_receipts">
+						<div onclick="document.getElementById('thumbnail').click(); return false">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M13.5,16V19H10.5V16H8L12,12L16,16H13.5M13,9V3.5L18.5,9H13Z"></path></svg>
+							<p>{{LANG browse_to_upload}}</p>
+							<img id="receipt_img_preview" src="">
+						</div>
+					</div>
+					<input type="file" class="hidden" id="thumbnail" name="thumbnail" accept="image/*">
+					<input name="image" type="file" id="upload" class="hidden">
+					<input name="type" type="hidden" id="bank_transfer_type" class="hidden">
+					<input name="description" type="hidden" id="bank_transfer_des" class="hidden">
+					<input type="reset" id="configreset" value="Reset" class="hidden">
+				</div>
+				<div class="modal-footer">
+					<div class="ball-pulse"><div></div><div></div><div></div></div>
+					<button type="button" class="matbtn btn btn-default" data-dismiss="modal">{{LANG cancel}}</button>
+					<button type="submit" class="btn btn-main">{{LANG publish}}</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<?php else: ?>
+<div class="go-pro-container">
+	<div class="go-pro-head-upgraded">
+		<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+		<h4>{{LANG congratulations}}</h4>
+		<p class="text-center">{{LANG uare_pro}}</p>
+	</div>
+	<div class="go-pro-body-upgraded">
+		<div class="upgraded-features">
+			<p><span><i class="fa fa-check"></i></span> {{LANG upload_1tr_limit}}</p>
+			<p><span><i class="fa fa-check"></i></span> {{LANG ads_wont_show_up}}</p>
+			<p><span><i class="fa fa-check"></i></span> {{LANG ur_are_featured}}</p>
+			<p><span><i class="fa fa-check"></i></span> {{LANG verified_badge}}</p>
+		</div>
+	</div>
+	<div class="go-pro-footer-upgraded">
+		<button class="btn-main btn">
+			<a href="{{LINK }}">{{LANG start_features}}</a>
+		</button>
+	</div>
+</div>
+<?php endif; ?>

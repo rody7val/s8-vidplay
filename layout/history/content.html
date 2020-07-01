@@ -1,0 +1,29 @@
+<div class="subscriptions-list">
+	<h4 class="ptitle">
+		<div><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 32 32"><path fill="currentColor" d="M16 2c-7.72 0-14 6.28-14 14s6.28 14 14 14 14-6.28 14-14-6.28-14-14-14zM20.977 18h-5.972c-0.552 0-1.005-0.452-1.005-1.005v-7.961c0-0.552 0.448-1 1-1s1 0.448 1 1v6.966h4.977c0.553 0 1 0.448 1 1 0 0.553-0.448 1-1 1z"></path></svg></div> {{LANG history}}
+	</h4>
+	<?php if (count($pt->videos) == 0) { ?>
+		<div class="empty_state">
+			<span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M16 2c-7.72 0-14 6.28-14 14s6.28 14 14 14 14-6.28 14-14-6.28-14-14-14zM20.977 18h-5.972c-0.552 0-1.005-0.452-1.005-1.005v-7.961c0-0.552 0.448-1 1-1s1 0.448 1 1v6.966h4.977c0.553 0 1 0.448 1 1 0 0.553-0.448 1-1 1z" /></svg></span>
+			<p>{{LANG no_videos_found_history}}</p>
+		</div>
+	<?php } else { ?>
+		<div class="author-list row pt_history">
+			{{HISTORY_LIST}}
+		</div>
+	<?php } ?>
+	<?php if (count($pt->videos) > 5) { ?>
+		<button class="watch-video-show-more desc load-more vp_load_more" data-type="history">
+			<span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path></svg></span> {{LANG show_more}}
+		</button>
+	<?php } ?>
+</div>
+<script>
+$(document).ready(function() {
+	$("img[data-src]").unveil(200, function() {
+		$(this).on('load', function() {
+			this.style.opacity = 1;
+		});
+	});
+});
+</script>
