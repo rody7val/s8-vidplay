@@ -549,3 +549,15 @@ button.pro-bg {
 button.pro-bg:hover {
     background: #31373a;
 }
+
+@media (min-width: 705px) {
+    .yp_side_drawer{
+        top: 0;
+    }
+}
+@media (max-width: 705px) {
+    .yp_side_drawer{
+        top: auto;
+        bottom: 0;
+    }
+}
