@@ -1136,6 +1136,7 @@ from {left: -200px; width: 30%;}50% {width: 30%;}70% {width: 70%;}80% { left: 50
 
 @media (max-width: 1430px) {
 .container {width: 1056px;}
+.yp_side_drawer {top: 53px!important;}
 }
 
 @media (max-width: 1360px) {
@@ -1143,7 +1144,7 @@ from {left: -200px; width: 30%;}50% {width: 30%;}70% {width: 70%;}80% { left: 50
 nav.navbar-findcond .search-header input {width: 440px;}
 .articles-content .pt_article_h_list .video-thumb img {min-height: 200px;max-height: 200px;}
 .custom_width_import {width: 77%;}
-.yp_side_drawer {width: 110px;}
+.yp_side_drawer {width: 110px; top: 53px!important;}
 .yp_side_menu.has_side_menu {margin-left: 110px;}
 .yp_side_drawer ul.sections {border: 0;padding: 0 5px;}
 .yp_side_drawer ul.sections.menu_links li {width: 100%;float: none;}
