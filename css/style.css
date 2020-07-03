@@ -1133,7 +1133,9 @@ from {left: -200px; width: 30%;}50% {width: 30%;}70% {width: 70%;}80% { left: 50
 .container {width: 1150px;}
 .cus_slider .slick-prev, .cus_slider .slick-next, .home-page-categories .row.vp_top_vids .slick-prev, .home-page-categories .row.vp_top_vids .slick-next {transform: none;top: 45px;}
 }
-
+@media (min-width: 1430px) {
+.yp_side_drawer {top: 53px!important;}
+}
 @media (max-width: 1430px) {
 .container {width: 1056px;}
 .yp_side_drawer {top: 53px!important;}
